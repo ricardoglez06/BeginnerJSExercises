@@ -1,4 +1,4 @@
-// PROBLEMA 1
+//PROBLEM 1
 // let randomNumber = Math.floor(Math.random()*100);
 // console.log(randomNumber);
 // tryNumber = prompt("Intenta adivinar el numero aleatorio");
@@ -13,4 +13,6 @@
 // alert("Congratulations, you guessed the number correctly");
 // document.write("The random number was ", randomNumber);
 
-// PROBLEMA 2
+
+
+// PROBLEM 2
