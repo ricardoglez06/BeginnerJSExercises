@@ -16,11 +16,19 @@
 
 
 // PROBLEM 2
-let amount = prompt("What is the amount to withdraw?");
-if (amount > 50){
-    let bills = Math.floor(amount/50);
-    let remainingMoney = amount % 50;
-    document.write(`You´ll get ${bills} bills of $50 and the remaining money is $${remainingMoney}`) 
-} else {
-    alert("There are not enough funds");
-}
+// let amount = prompt("What is the amount to withdraw?");
+// if (amount > 50){
+//     let bills = Math.floor(amount/50);
+//     let remainingMoney = amount % 50;
+//     document.write(`You´ll get ${bills} bills of $50 and the remaining money is $${remainingMoney}`) 
+// } else {
+//     alert("There are not enough funds");
+// }
+
+
+// PROBLEM 3
+let num = prompt("Which number do you want to know his multiplication table from 1 to 10");
+for (let i=1;i<=10;i++){
+    let result = i*num;
+    document.write(`${i}*${num} = ${result}<br>`);
+};
