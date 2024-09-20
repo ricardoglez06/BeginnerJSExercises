@@ -35,10 +35,25 @@
 
 
 // PROBLEM 4
-let pswrd = prompt("Enter a password");
-if (pswrd.length < 10 ||pswrd.search(/[a-z]/) === -1 || pswrd.search(/[A-Z]/) === -1 || pswrd.search(/[0-9]/) === -1){
-    alert("The password must have at least 10 characters, a lowercase letter, a uppercase letter and a number");
-} else {
-    document.write(`The password was entered correctly <br>`);
-    document.write(`Your password is: ${pswrd}`); 
+// let pswrd = prompt("Enter a password");
+// if (pswrd.length < 10 ||pswrd.search(/[a-z]/) === -1 || pswrd.search(/[A-Z]/) === -1 || pswrd.search(/[0-9]/) === -1){
+//     alert("The password must have at least 10 characters, a lowercase letter, a uppercase letter and a number");
+// } else {
+//     document.write(`The password was entered correctly <br>`);
+//     document.write(`Your password is: ${pswrd}`); 
+// }
+
+// PROBLEM 5
+let n = prompt("How many numbers of the Fibonacci secuence do you want?");
+let i = 0;
+let numMain = 0;
+let numSecondary = 1;
+let aux;
+
+while (i < n){
+    document.write(` ${numMain},`);
+    aux = numMain + numSecondary;
+    numSecondary = numMain;
+    numMain = aux;
+    i++;
 }
