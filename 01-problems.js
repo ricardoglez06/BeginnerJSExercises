@@ -14,7 +14,6 @@
 // document.write("The random number was ", randomNumber);
 
 
-
 // PROBLEM 2
 // let amount = prompt("What is the amount to withdraw?");
 // if (amount > 50){
@@ -43,17 +42,34 @@
 //     document.write(`Your password is: ${pswrd}`); 
 // }
 
-// PROBLEM 5
-let n = prompt("How many numbers of the Fibonacci secuence do you want?");
-let i = 0;
-let numMain = 0;
-let numSecondary = 1;
-let aux;
 
-while (i < n){
-    document.write(` ${numMain},`);
-    aux = numMain + numSecondary;
-    numSecondary = numMain;
-    numMain = aux;
-    i++;
+// PROBLEM 5
+// let n = prompt("How many numbers of the Fibonacci secuence do you want?");
+// let i = 0;
+// let numMain = 0;
+// let numSecondary = 1;
+// let aux;
+
+// while (i < n){
+//     document.write(` ${numMain},`);
+//     aux = numMain + numSecondary;
+//     numSecondary = numMain;
+//     numMain = aux;
+//     i++;
+// }
+
+
+// PROBLEM 6
+let n = prompt("Enter the number you want to calculate its factorial");
+document.write(` ${n} *`);
+let summation = n;
+
+for (let i = n-1; i > 0; i--){
+    summation *= i;
+    if (i <= 1){
+        document.write(` ${i}`);
+        break;
+    }
+    document.write(` ${i} *`);
 }
+document.write(` = ${summation}`);
