@@ -37,9 +37,16 @@
 
 
 //EXERCISE 03
-function getByIdx(arr, idx){
-    return (arr[idx] !== undefined) ? arr[idx] : "The element doesn´t exist";
-}
+// function getByIdx(arr, idx){
+//     return (arr[idx] !== undefined) ? arr[idx] : "The element doesn´t exist";
+// }
 
-let result = getByIdx([1,2],1);
-console.log(result);
+// let result = getByIdx([1,2],1);
+// console.log(result);
+
+//EXERCISE 04
+for (let i=0;i<=10;i++){
+    if (i%2 !== 0){
+        console.log(`odd number ${i}`);
+    }
+}
