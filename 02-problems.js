@@ -44,9 +44,23 @@
 // let result = getByIdx([1,2],1);
 // console.log(result);
 
+
 //EXERCISE 04
-for (let i=0;i<=10;i++){
-    if (i%2 !== 0){
-        console.log(`odd number ${i}`);
-    }
+// for (let i=0;i<=10;i++){
+//     if (i%2 !== 0){
+//         console.log(`odd number ${i}`);
+//     }
+// }
+
+
+//EXERCISE 05
+let array = [2, 5, 7, 15, -5, -100, 55];
+
+function getMinMax(arr){
+    let min = Math.min(...array);
+    let max = Math.max(...array);
+    return [min,max];
 }
+
+let numbers = getMinMax(array);
+console.log(numbers);
