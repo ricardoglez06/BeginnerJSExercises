@@ -54,13 +54,28 @@
 
 
 //EXERCISE 05
+// let array = [2, 5, 7, 15, -5, -100, 55];
+
+// function getMinMax(arr){
+//     let min = Math.min(...array);
+//     let max = Math.max(...array);
+//     return [min,max];
+// }
+
+// let numbers = getMinMax(array);
+// console.log(numbers);
+
+
+//EXERCISE 06
 let array = [2, 5, 7, 15, -5, -100, 55];
 
-function getMinMax(arr){
-    let min = Math.min(...array);
-    let max = Math.max(...array);
-    return [min,max];
+function positiveNumbers(array){
+    let positives = 0;
+    for (number of array){
+        (number > 0) ? positives++ : positives;
+    }
+    return positives;
 }
 
-let numbers = getMinMax(array);
-console.log(numbers);
+let result = positiveNumbers(array);
+console.log(result);
