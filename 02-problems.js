@@ -67,15 +67,23 @@
 
 
 //EXERCISE 06
-let array = [2, 5, 7, 15, -5, -100, 55];
+// let array = [2, 5, 7, 15, -5, -100, 55];
 
-function positiveNumbers(array){
-    let positives = 0;
-    for (number of array){
-        (number > 0) ? positives++ : positives;
-    }
-    return positives;
-}
+// function positiveNumbers(array){
+//     let positives = 0;
+//     for (number of array){
+//         (number > 0) ? positives++ : positives;
+//     }
+//     return positives;
+// }
 
-let result = positiveNumbers(array);
-console.log(result);
+// let result = positiveNumbers(array);
+// console.log(result);
+
+// EXERCISE 07
+// function finalCost(cost,taxes){
+//     return cost*(1+taxes);
+// }
+
+// let result = finalCost(19.90, 0.15);
+// console.log(result);
