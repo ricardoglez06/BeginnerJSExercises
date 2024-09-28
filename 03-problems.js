@@ -31,14 +31,27 @@
 
 // console.log(`The result is ${total}`);
 
-// PROBLEM 4
-let mainNumber = 0;
-let secondaryNumber = 1;
-let aux;
 
-for (let i=0; i<50; i++){
-    console.log(`${numMain}, `);
-    aux = numMain + secondaryNumber;
-    secondaryNumber = numMain;
-    numMain = aux;
+// PROBLEM 4
+// let mainNumber = 0;
+// let secondaryNumber = 1;
+// let aux;
+
+// for (let i=0; i<50; i++){
+//     console.log(`${numMain}, `);
+//     aux = numMain + secondaryNumber;
+//     secondaryNumber = numMain;
+//     numMain = aux;
+// }
+
+
+// PROBLEM 5
+let n = parseInt(prompt("Enter the amount of numbers you want to compare to find the highest"));
+let highestNumber;
+let number;
+
+for (let i=0; i < n; i++){
+    number = parseInt(prompt("Enter a number"));
+    (i==0 || number > highestNumber) ? highestNumber = number : highestNumber;
 }
+console.log(`The highest number is ${highestNumber}`);
