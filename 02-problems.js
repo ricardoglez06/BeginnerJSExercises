@@ -148,3 +148,22 @@
 
 // let result = toArray(pairs);
 // console.log(result);
+
+
+// EXERCISE 10
+let lenght = 7;
+
+function createArray(n){
+    if (n<=0) {
+        return []; 
+    }
+
+    let array = [];
+    for (let i=1; i<=n; i++){
+        array[i-1] = i;
+    }
+    return array;
+}
+
+let result = createArray(lenght);
+console.log(result);
