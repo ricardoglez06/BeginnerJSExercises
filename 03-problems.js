@@ -57,5 +57,15 @@
 // console.log(`The highest number is ${highestNumber}`);
 
 // PROBLEM 6
-let number = parseInt(prompt("Enter a number to know if it is pair or not"));
-(number%2 == 0) ? console.log("Pair") : console.log("Unpair");
+// let number = parseInt(prompt("Enter a number to know if it is pair or not"));
+// (number%2 == 0) ? console.log("Pair") : console.log("Unpair");
+
+// PROBLEM 7
+let rangeStart = parseInt(prompt("Enter the range start"));
+let rangeEnd = parseInt(prompt("Enter the range end"));
+
+for (rangeStart; rangeStart <= rangeEnd; rangeStart++){
+    if (rangeStart%2 == 0){
+        console.log(`${rangeStart}, `);
+    }
+}
