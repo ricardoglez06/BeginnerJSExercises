@@ -87,3 +87,35 @@
 
 // let result = finalCost(19.90, 0.15);
 // console.log(result);
+
+
+// EXERCISE 08
+let array = [{
+    id: 1,
+    name: "Nicolas",
+},{
+    id: 2,
+    name: "Felipe",
+},{
+    id: 3,
+    name: "Chanchito",
+}];
+
+/** RESULT EXPECTED (pairs = array of arrays)
+ */ let expectedPairs = [
+    [1, { id: 1, name: "Nicolas"}],
+    [2, { id: 2, name: "Felipe"}],
+    [3, { id: 3, name: "Chanchito"}],
+ ]
+
+ function toPairs(arr) {
+    let pairs = [];
+    for (idx in arr){
+        let element = arr[idx];
+        pairs[idx] = [element.id, element];
+    }
+    return pairs;
+ }
+
+ let result = toPairs(array);
+ console.log(result);
