@@ -72,24 +72,32 @@
 
 
 // PROBLEM 8
-let pairs = 0;
-let averageOdds;
+// let pairs = 0;
+// let averageOdds;
 
-do {
-    let number = parseInt(prompt("Enter a number"));
-    let odds = 0;
-    let counter = 1;
+// do {
+//     let number = parseInt(prompt("Enter a number"));
+//     let odds = 0;
+//     let counter = 1;
 
-    if (number%2 === 0) {
-        pairs += number;
-    } else {
-        odds += number;
-        counter++;
-    }
-    averageOdds = odds / counter;
+//     if (number%2 === 0) {
+//         pairs += number;
+//     } else {
+//         odds += number;
+//         counter++;
+//     }
+//     averageOdds = odds / counter;
 
-    decision = prompt("Do you want to enter another number? Enter 'Y' for Yes, or 'N' for No.")
-} while (decision === "Y")
+//     decision = prompt("Do you want to enter another number? Enter 'Y' for Yes, or 'N' for No.")
+// } while (decision === "Y")
 
-console.log(`The summatory of the pairs is ${pairs}`);
-console.log(`The average of the odds is ${averageOdds}`);
+// console.log(`The summatory of the pairs is ${pairs}`);
+// console.log(`The average of the odds is ${averageOdds}`);
+
+
+// PROBLEM 9
+let number = parseInt(prompt("Enter a number (10-99) you want to separate its digits"));
+let firstDigit = Math.floor(number/10);
+let secondDigit = number%10;
+
+console.log(`${firstDigit} , ${secondDigit}`);
