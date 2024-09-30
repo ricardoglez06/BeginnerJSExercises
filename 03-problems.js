@@ -61,11 +61,35 @@
 // (number%2 == 0) ? console.log("Pair") : console.log("Unpair");
 
 // PROBLEM 7
-let rangeStart = parseInt(prompt("Enter the range start"));
-let rangeEnd = parseInt(prompt("Enter the range end"));
+// let rangeStart = parseInt(prompt("Enter the range start"));
+// let rangeEnd = parseInt(prompt("Enter the range end"));
 
-for (rangeStart; rangeStart <= rangeEnd; rangeStart++){
-    if (rangeStart%2 == 0){
-        console.log(`${rangeStart}, `);
+// for (rangeStart; rangeStart <= rangeEnd; rangeStart++){
+//     if (rangeStart%2 == 0){
+//         console.log(`${rangeStart}, `);
+//     }
+// }
+
+
+// PROBLEM 8
+let pairs = 0;
+let averageOdds;
+
+do {
+    let number = parseInt(prompt("Enter a number"));
+    let odds = 0;
+    let counter = 1;
+
+    if (number%2 === 0) {
+        pairs += number;
+    } else {
+        odds += number;
+        counter++;
     }
-}
+    averageOdds = odds / counter;
+
+    decision = prompt("Do you want to enter another number? Enter 'Y' for Yes, or 'N' for No.")
+} while (decision === "Y")
+
+console.log(`The summatory of the pairs is ${pairs}`);
+console.log(`The average of the odds is ${averageOdds}`);
